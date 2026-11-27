@@ -1,0 +1,7 @@
+{
+    "model": "Linear Regression",
+    "features": 44,
+    "cross_validation_r2_mean": 0.9743473857408457,
+    "cross_validation_r2_std": 0.002383876720889282,
+    "cross_validation_r2_percent": 97.43473857408456
+}
