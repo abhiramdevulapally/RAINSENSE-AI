@@ -1,0 +1,137 @@
+Duplicate Rows: 300
+
+Missing Values:
+failure_severity          80036
+failure_type              80036
+rainfall_mm                8020
+bearing_temperature_c      7024
+wind_speed_kmph            7010
+track_vibration_level      6020
+axle_temperature_c         6014
+traction_motor_temp_c      5014
+humidity_percent           5008
+battery_voltage            4011
+brake_pad_wear_percent     4011
+wheel_wear_percent         3012
+last_maintenance_days      3009
+delay_minutes              2003
+load_factor_percent        1003
+inspection_score              0
+power_consumption_kw          0
+sensor_health_index           0
+maintenance_required          0
+signal_system_status          0
+daily_trips                   0
+train_id                      0
+brake_pressure_psi            0
+region                        0
+ambient_temperature_c         0
+track_curvature_degree        0
+ballast_condition             0
+rail_wear_mm                  0
+track_temperature_c           0
+distance_travelled_km         0
+average_speed_kmph            0
+train_age_years               0
+train_type                    0
+season                        0
+risk_score                    0
+dtype: int64
+
+Missing Percentage:
+train_id                   0.00
+region                     0.00
+season                     0.00
+train_type                 0.00
+train_age_years            0.00
+average_speed_kmph         0.00
+distance_travelled_km      0.00
+track_temperature_c        0.00
+rail_wear_mm               0.00
+track_vibration_level      6.00
+ballast_condition          0.00
+track_curvature_degree     0.00
+ambient_temperature_c      0.00
+humidity_percent           4.99
+rainfall_mm                8.00
+wind_speed_kmph            6.99
+wheel_wear_percent         3.00
+axle_temperature_c         6.00
+brake_pressure_psi         0.00
+brake_pad_wear_percent     4.00
+bearing_temperature_c      7.00
+battery_voltage            4.00
+traction_motor_temp_c      5.00
+signal_system_status       0.00
+power_consumption_kw       0.00
+load_factor_percent        1.00
+daily_trips                0.00
+delay_minutes              2.00
+last_maintenance_days      3.00
+inspection_score           0.00
+sensor_health_index        0.00
+failure_type              79.80
+maintenance_required       0.00
+failure_severity          79.80
+risk_score                 0.00
+dtype: float64
+
+Data Types:
+train_id                    int64
+region                        str
+season                        str
+train_type                    str
+train_age_years             int64
+average_speed_kmph        float64
+distance_travelled_km       int64
+track_temperature_c       float64
+rail_wear_mm              float64
+track_vibration_level     float64
+ballast_condition             str
+track_curvature_degree    float64
+ambient_temperature_c     float64
+humidity_percent          float64
+rainfall_mm               float64
+wind_speed_kmph           float64
+wheel_wear_percent        float64
+axle_temperature_c        float64
+brake_pressure_psi        float64
+brake_pad_wear_percent    float64
+bearing_temperature_c     float64
+battery_voltage           float64
+traction_motor_temp_c     float64
+signal_system_status          str
+power_consumption_kw      float64
+load_factor_percent       float64
+daily_trips                 int64
+delay_minutes             float64
+last_maintenance_days     float64
+inspection_score          float64
+sensor_health_index       float64
+failure_type                  str
+maintenance_required        int64
+failure_severity              str
+risk_score                float64
+dtype: object
+
+Statistical Summary:
+            train_id  train_age_years  ...  maintenance_required     risk_score
+count  100300.000000    100300.000000  ...         100300.000000  100300.000000
+mean    50000.574985        15.466052  ...              0.202034      57.779099
+std     28867.341024         8.625105  ...              0.401519       7.674574
+min         1.000000         1.000000  ...              0.000000      30.696595
+25%     25005.750000         8.000000  ...              0.000000      52.401002
+50%     49999.500000        15.000000  ...              0.000000      57.649679
+75%     75005.250000        23.000000  ...              0.000000      62.957405
+max    100000.000000        30.000000  ...              1.000000      97.838817
+
+[8 rows x 28 columns]
+
+Categorical Columns:
+['region', 'season', 'train_type', 'ballast_condition', 'signal_system_status', 'failure_type', 'failure_severity']
+
+Target Distribution:
+maintenance_required
+0    80036
+1    20264
+Name: count, dtype: int64
